@@ -6,10 +6,11 @@
 
 body {
     margin: 5% 5%;
+    font-family: 'Caveat', cursive;
 }
 
 header{
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     text-align: center;
 }
 
@@ -20,13 +21,12 @@ header h1{
 
 ul{
     list-style: none;
-    
 }
 
 li {
     display: inline-block;
     margin: 5% 5% 0 5%;
-    
+    font-size: 25px;
 }
 
 li > a{
@@ -38,17 +38,55 @@ li > a{
 .container{
     display: grid;
     grid-template-areas:
-        "img text text"
-        "img text text";
+      'img img paragraph1 paragraph1 paragraph1'
+      'paragraph2 paragraph2 paragraph2 paragraph2 paragraph2'
+      'paragraph3 paragraph3 paragraph3 paragraph3 paragraph3';
+    gap: 10px;
+    
+    
 }
 
 .container > div {
     text-align: center;
     font-size: 25px;
-    border: 2px solid red;
-    
+    background-color: rgb(220, 228, 235);
 }
 
+.container > div > img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
 
+.container > div > img:hover {
+    transform: scaleX(-1);
+}
+
+.item1{
+    grid-area: img;
+    text-align: center;
+}
+
+.item2{
+    grid-area: paragraph1;
+}
+
+.item3{
+    grid-area: paragraph2;
+}
+
+.item4{
+    grid-area: paragraph3;
+}
+
+footer{
+    margin-top: 3%;
+    text-align: center;
+}
+
+footer > p{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
 
 
