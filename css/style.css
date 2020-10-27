@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5% 5%;
+}
+
+header{
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+header h1{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+li {
+    display: inline-block;
+    margin: 5% 5% 0 5%;
+    
+}
+
+li > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+        "img text text"
+        "img text text";
+}
+
+.container > div {
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid red;
+    
+}
+
+
+
+
