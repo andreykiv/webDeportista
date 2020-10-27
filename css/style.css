@@ -42,8 +42,6 @@ li > a{
       'paragraph2 paragraph2 paragraph2 paragraph2 paragraph2'
       'paragraph3 paragraph3 paragraph3 paragraph3 paragraph3';
     gap: 10px;
-    
-    
 }
 
 .container > div {
@@ -89,4 +87,75 @@ footer > p{
     letter-spacing: 10px;
 }
 
+form {
+    text-align: center;
+    background-color: rgb(220, 228, 235);
+}
 
+form > label{
+    display: block;
+    margin: auto;
+    /* padding: 1% 0%; */
+    font-size: 20px;
+}
+
+form > textarea{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+form > button {
+    display: block;
+    width: 75px;
+    height: 5%;
+    border: 2px solid blue;
+    background-color: rgb(220, 228, 235);
+    cursor: pointer;
+    margin: 0% auto;
+    font-family:'Caveat', cursive;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+#picsContainer{
+    display: grid;
+    grid-template-areas:
+      'img img img '
+      'img img img';
+    gap: 10px;
+
+}
+
+#picsContainer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(220, 228, 235);
+}
+
+#picsContainer > div > img{
+    max-width: 654px;
+    max-height: 454px;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width: 700px){
+    .container {
+        grid-template-areas:
+          'img'
+          'paragraph1'
+          'paragraph2'
+          "paragraph3";
+        } 
+
+      #picsContainer {
+        grid-template-areas:
+          'img img'
+          'img img'
+          'img img'
+        }
+        
+}
