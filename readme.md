@@ -20,8 +20,6 @@ One of the feature is the following:
 [git pages link](https://andreykiv.github.io/webDeportista/index.html)
 
 
-lista>sublista> sublista
-block quotes ... con '>'
 
 
 
